@@ -1,7 +1,7 @@
 :root {
   --bghover: #cacaca;
   --transparenttxt: rgba(255, 255, 255, 0.85); 
-  --teal: rgb(0, 69, 85); 
+  --teal: rgb(0, 69, 86); 
 }
 html, body {
   scroll-behavior: smooth;
