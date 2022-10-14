@@ -46,7 +46,7 @@ body {
   align-items: center;
   flex-wrap: wrap;
   background-color: var(--bghover) 1;
-  margin-top: 20ch;
+  margin-top: 0ch;
   padding: 10px;
 
 }
@@ -170,6 +170,18 @@ li {
 
 }
 
+.bgimage2 {
+
+  background-position: center; 
+  opacity: 0.43;
+  background-size: cover;
+  background-size: 100vw;
+  background-repeat: repeat;
+  background-color:rgba(255, 255, 255, 1);
+
+}
+
+
   #title {
     display: flex;
    justify-content: center;
@@ -190,8 +202,8 @@ li {
     font-size: 0.9em;
     line-height: 115%;
     font-style: italic;
-    
   }
+
   #h1 {
     margin: 3em;
     display: block;
@@ -489,6 +501,18 @@ opacity: 0.3;
 
   }
 
+  #lastP2 {
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 0)
+      );
+      margin: 0;
+      padding: 0;
+  }
+
+
+
 
 /*
   #title2 {
@@ -503,14 +527,26 @@ opacity: 0.3;
   }
   */
 
-  
 
   @media  only screen and (min-device-width: 480px) {
     body {
-      font-size: 0.75em;
-      scroll-margin-top: 1em;
-      
+      font-size: 0.75em;   
     }
+    .bgimage {
+      background-repeat: repeat;
+  }
+
+
+  #lastP {
+    background: linear-gradient(
+      to top,
+      rgba(255, 255, 255, 1),
+      var(--transparenttxt) 50%,
+      var(--transparenttxt) 100%
+      );
+  }
+
+
   }
   @media only screen and (max-width: 480px) {
 
@@ -520,17 +556,31 @@ opacity: 0.3;
       margin-top: -6em;
 
     }
-    #Pnews {
-      padding-top: 140px;
-      margin-top: -140px;
-      scroll-margin-top: 1em;
+    #titletigerwhite {
+      width: 70%;
+      height: 70%
     }
-    #PAbout  { 
-        padding-top: 140px;
-        margin-top: -140px;
+    #lastP {
+
+      background: linear-gradient(
+        to top,
+        rgba(255, 255, 255, 1),
+        var(--transparenttxt) 50%,
+        var(--transparenttxt) 100%
+        );
+  
+    }
+    #header-text.quote {
+
+      font-size: 0.7em;
+
     }
 
 
+    .bgimage {
+      background-repeat: repeat;
+      
+  }
 
 
     #ytthumb {
@@ -575,6 +625,8 @@ footer {
 
         }
 
+
+
   }
 
   @media only screen and (min-width:641px)   { 
@@ -599,16 +651,23 @@ footer {
       padding-right: 40px;
     }
 
-  #Pnews {
-    scroll-margin-top: 5em;
-  }
-  #PAbout {
-    scroll-margin-top: 5em;
-  }
+    #lastP {
+
+      background: linear-gradient(
+        to top,
+        rgba(255, 255, 255, 1),
+        var(--transparenttxt) 50%,
+        var(--transparenttxt) 100%
+        );
+  
+    }
+
 
   }
 
-  @media (max-width: 1023px) {
+  @media (max-width: 1024px) {
+
+ 
 
     #h1 {
       margin-bottom: 30px;
@@ -642,6 +701,7 @@ footer {
         }
         .footer-right {
           margin-top: 20px;
+          margin-bottom: 20px;
         }
     footer > ul{
       display: flex;
@@ -665,19 +725,18 @@ footer {
         padding-top: 140px;
         margin-top: -140px; 
     }
-    #Pnews {
-      scroll-margin-top: 0.1em;
-    }
-    #PAbout {
-      scroll-margin-top: 0.1em;
-    }
+
     }
   
-  @media (min-width: 1023px) {
+  @media (min-width: 1024px) {
+
 
     #h1 {
       margin-bottom: 30px;
     }
+    .bgimage {
+      background-repeat: no-repeat;
+  }
 
 
     #lastP {
@@ -704,13 +763,9 @@ footer {
       margin-left: 90px;
       padding-left: 3px;
       padding-right: 3px;
+      
   }
-  #Pnews {
-    scroll-margin-top: 5em;
-  }
-  #PAbout {
-    scroll-margin-top: 5em;
-  }
+
 
   }
 
@@ -833,7 +888,7 @@ footer {
     
 
     @media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ 
-    @media only screen and (max-width:1025px) { 
+    @media only screen and (max-width:1024px) { 
       
     #h1 {
       margin-bottom: 30px;
@@ -891,17 +946,25 @@ footer {
         margin-top: -140px; 
     }
     #Pnews {
-      scroll-margin-top: 0.1em;
+      scroll-margin-top: -2.5em;
     }
     #PAbout {
-      scroll-margin-top: 0.1em;
+      scroll-margin-top: -2.5em;
+    }
+    #Pcontact { 
+
+      scroll-margin-top: -2.5em;
     }
     }
   
-  @media (min-width: 1023px) {
+  @media (min-width: 1024px) {
+
 
     #h1 {
       margin-bottom: 30px;
+      padding-left: 0;
+      padding-right: 0;
+
     }
 
 
@@ -929,6 +992,7 @@ footer {
       margin-left: 90px;
       padding-left: 3px;
       padding-right: 3px;
+     
   }
   #Pnews {
     scroll-margin-top: 5em;
@@ -939,7 +1003,14 @@ footer {
 
   }
      
-    @media (min-width:1281px) { /* hi-res laptops and desktops */ }
+    @media (max-width:1281px) { 
+      #h1 {
+        padding-left: 1px;
+        padding-right: 1px;
+      }
+    }
+     
+    
     
 
     
@@ -963,8 +1034,8 @@ footer {
       #h1 {
        
         margin: 6em;
-        padding-left: 1px;
-        padding-right: 1px;
+        padding-left: 0px;
+        padding-right: 0px;
         margin-bottom: 30px;
       }
       footer {
@@ -985,6 +1056,7 @@ footer {
       margin-left: 90px;
       padding-left: 8px;
       padding-right: 8px;
+     
   }
   #Pnews {
     scroll-margin-top: 6em;
@@ -1010,5 +1082,78 @@ footer {
       }
       #PAbout {
         scroll-margin-top: 8em;
+      }
+      #Pcontact  { 
+
+        scroll-margin-top: 8em;
+    }
+    }
+
+
+
+
+
+
+/* OMG -_- fucking ipad air mini or whatever its called */
+
+    @media (width: 1024px) {
+      #Pnews {
+        padding: 0;
+        margin: 0;
+        scroll-margin-top: 6em;
+      }
+      #PAbout  { 
+        padding: 0;
+        margin: 0;
+          scroll-margin-top: 6em;
+      }
+      #Pcontact  { 
+        padding: 0;
+        margin: 0;
+          scroll-margin-top: 6em;
+      }
+    }
+
+
+    @media (min-width: 280px) and (max-width: 480px) {
+      #Pcontact  { 
+          scroll-margin-top: 3em;
+      }
+    }
+
+
+
+
+
+
+
+    @media (min-width: 480px) and (max-width: 641px) {
+  
+        #Pnews {
+
+          scroll-margin-top: -1em;
+        }
+        #PAbout  { 
+
+            scroll-margin-top: -1em;
+        }
+        #Pcontact  { 
+
+            scroll-margin-top: 5em;
+        }
+
+    }
+    @media (min-width: 641px) and (max-width: 1024px) {
+      #Pnews {
+
+        scroll-margin-top: 0em;
+      }
+      #PAbout  { 
+
+          scroll-margin-top: 0em;
+      }
+      #Pcontact  { 
+
+          scroll-margin-top: 5em;
       }
     }
