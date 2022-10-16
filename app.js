@@ -5,14 +5,14 @@ const navSlide = () => {
 
     //toggle nav
     burger.addEventListener('click', () => {
-    nav.classList.toggle('nav-active');
+        nav.classList.toggle('nav-active');
 
     //animate links
     navLinks.forEach((link, index) => {
     if (link.style.animation) {
         link.style.animation = ''
         } else {
-        link.style.animation = `navLinks 0.5s ease forwards ${index / 6 + 0.5}s`;
+        link.style.animation = `navLinks 0.5s ease forwards ${index / 7 + 0.5}s`;
         }
     });
 
@@ -20,18 +20,9 @@ const navSlide = () => {
       burger.classList.toggle('toggle');
 });
 
-
-
-
 }
-
 
 navSlide();
 // when you have multiple functions:
 
 //const app = ()=>{     navSlide(); }
-
-
-
-
-
