@@ -2,10 +2,13 @@
   --bghover: rgb(202, 202, 202);
   --bghover2: rgb(178, 178, 178);
   --transparenttxt: rgba(255, 255, 255, 0.85); 
-  --teal: rgb(0, 185, 195); 
+  --teal: rgb(0, 110, 118); 
+  --Lteal: rgb(68, 187, 194); 
+  --Tteal: rgba(0, 110, 118, 0.5); 
   --black07: rgba(0, 0, 0, 0.7); 
   --black10: black;
   --grey: rgba(128, 128, 128, 1);
+  --white: white;
 }
 
 
@@ -26,11 +29,11 @@ html, body {
 
 
 body {
-  background-color: var(--bghover);
+  background-color: var(--white);
 }
 
 #nav-bar {
-  background-color: var(--grey);
+  background-color: var(--white);
   display: flex;
   justify-content: flex;
   align-items: center;
@@ -41,6 +44,7 @@ body {
   width: 100%;
   padding-left: 20px;
   padding-right: 20px;
+  border-bottom: 3px solid var(--Tteal);
 }
 
 
@@ -50,7 +54,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  background-color: var(--bghover) 1;
+
   margin-top: 0ch;
   padding: 10px;
 
@@ -68,7 +72,7 @@ body {
 
 
 #header-img { 
-    border: #cacaca 5px solid;
+    border: var(--teal) 5px solid;
     border-radius: 50%;
     margin-top: 30px;
     
@@ -101,24 +105,22 @@ body {
   margin-right: auto;
   width: 250px;
   height: 250px;
-  box-shadow: 0px 4px 0px black;
-  opacity: 0.7;
   transition: 0.4s ease;
 
   opacity: 1;
   border-radius:10%;
-  box-shadow: 0 0 0 5px #000000;
+  
+  box-shadow: 0px 4px 0px var(--teal);
 }
 #titletigerwhite:hover {
-  box-shadow: 0px 4px 0px black;
-  opacity: 0.7;
+  box-shadow: 0 0 0 5px var(--teal);
   transition: 0.4s ease;
 }
 
 #nav-bar > ul {
     list-style-type: none;
     display: flex;
-    background-color: var(--grey);
+    background-color: var(--white);
   }
 li {
   display: flex;
@@ -128,7 +130,6 @@ li {
   opacity: 0.5;
   font-size: 1.1em;
   float: left;
-    color: black;
     padding: 5px;
     padding-bottom: 30px;
     text-decoration: none;
@@ -147,12 +148,14 @@ li {
   display: flex;
   justify-content: flex-start;
     box-shadow: inset 0 0 0 0 black;
-    color: var(--black07);
+    color: var(--black10);
     margin: 0 -.25rem;
     padding: 0 .29rem;
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
   }
-  
+
+
+  /*
   .navspan:hover {
 
     /* maybe?
@@ -160,15 +163,14 @@ li {
       to right,
       var(--black10) 20%,
     var(--bghover) 65%);
-    */
+    
 
-    color: var(--black10);
   }
-
+  */
 
 
   #nav-bar a:hover {
-    background-color: var(--bghover);
+    background-color: var(--Tteal);
     opacity: 1;
     font-weight: bold;
   }
@@ -176,7 +178,7 @@ li {
   .bgimage {
     background-image: url("./dragonhunter.jpeg");
     background-position: center; 
-    opacity: 0.43;
+    opacity: 0.8;
     background-size: cover;
     background-size: 100vw;
     background-repeat: no-repeat;
@@ -184,23 +186,22 @@ li {
 
 }
 
-.bgimage2 {
-
+.water {
+  background-image: url("./watercolorblue2.jpg");
   background-position: center; 
-  opacity: 0.43;
-  background-size: cover;
-  background-size: 100vw;
-  background-repeat: repeat;
-  background-color:rgba(255, 255, 255, 1);
+  background-repeat: no-repeat;
+  opacity: 1;
+  z-index: -1;
 
 }
+
+
 
 
   #title {
     display: flex;
    justify-content: center;
-    color: black;
-    font-family:  Helvetica, sans-serif;
+    color: var(--black10);
     font-size: 0.9em;
     line-height: 112%;
     margin-top: -30px;
@@ -210,18 +211,20 @@ li {
   #title2 {
     display: flex;
    justify-content: center;
-    color: white;
-    font-family:  Helvetica, sans-serif;
-    background: black;
+    color: var(--white);
+
+background-color: var(--Tteal);
     font-size: 0.9em;
+    font-weight: bolder;
     line-height: 115%;
     font-style: italic;
   }
 
+
   #h1 {
     margin: 3em;
     display: block;
-    background:rgba(0, 0, 0, 0.2);
+    background: var(--white);
     font-size: 30px;
     line-height: 80%;
     padding-left: 1px;
@@ -232,7 +235,6 @@ li {
     margin-top: 30px;
     display: flex;
    justify-content: center;
-    color: black;
     font-family:  Helvetica, sans-serif;
     background: var(--transparenttxt);
     padding: 20px 20px 50px 20px;
@@ -252,7 +254,7 @@ overflow: hidden;
     font-family: Helvetica, sans-serif;
     font-size: 0.55em;
     display:block;
-    color: black;
+    color: var(--black10);
     background: var(--transparenttxt);
     padding: 0px 20px 50px 20px;
   }
@@ -261,8 +263,7 @@ overflow: hidden;
 
     background: linear-gradient(
       to top,
-      rgba(255, 255, 255, 0),
-      rgba(255, 255, 255, 0.5),
+ 
       var(--transparenttxt) 50%,
       var(--transparenttxt) 100%
       );
@@ -271,7 +272,12 @@ overflow: hidden;
 
   #header-text {
    opacity: 1;
-   color: black;
+   color: var(--Lteal);
+  }
+
+  .quotetext {
+    color: var(--black10);
+    opacity: 1;
   }
   .container {
     display: flex;
@@ -320,7 +326,7 @@ overflow: hidden;
     position: absolute;
     top: 0px;
     right: 0px;
-font-size: 1.2em;
+font-size: 1em;
     height: calc(100% - 2px);
     width: 100px;
     border: none;
@@ -330,7 +336,7 @@ font-size: 1.2em;
   padding: 0 20px;
   cursor: pointer;
   font-family:  Helvetica, sans-serif;
-    background-color: grey;
+    background-color: var(--teal);
     color: white;
     cursor: pointer;
     border: none;
@@ -338,7 +344,7 @@ font-size: 1.2em;
     outline: none;
   }
   #submit:hover {
-    background-color: black;
+    background-color: var(--Tteal);
   }
 
   .add-email {
@@ -377,7 +383,7 @@ padding-left: 65px;
 
 
   footer {
-    background-color: var(--bghover);  
+    background-color: var(--white);  
     font-family:  Helvetica, sans-serif;
     border-top: 1px solid black;
     padding: 40px 0px 40px 0px;
@@ -402,7 +408,7 @@ padding-left: 65px;
       .hover-underline-animation {
         display: inline-block;
         position: relative;
-        color: rgb(104, 104, 104);
+        color: var(--black10);
         font-size: 15px;
       }
       .hover-underline-animation:after {
@@ -413,13 +419,13 @@ padding-left: 65px;
         height: 1.2px;
         bottom: 0.2rem;
         left: 0;
-        background-color: black;
+        background-color: var(--teal);
         transform-origin: bottom left;
         transition: transform 0.3s ease-out;
     
       }
       .hover-underline-animation:hover {
-        color: black;
+        color: var(--teal);
       }
       
       .hover-underline-animation:hover:after {
@@ -454,7 +460,6 @@ padding-left: 65px;
   scroll-margin-top: 7em;
   display: flex;
   justify-content: center;
-  background: black;
 
 }
 
@@ -462,59 +467,36 @@ padding-left: 65px;
 
 
 #videodiv {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-
-
+margin: 5em;
+border: 2em var(--teal) groove;
 }
-#video {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 31px;
-  padding: 30px;
-  z-index: 1;
 
-}
-#ytthumb {
-  width: 140%;
-  height: 120%;
-  position: absolute;
-  opacity: 0.7;
-  display:inline-block; 
-  border-radius: 1%;
-  z-index: -1;
-
-}
+/*
 
 #monitorstand {
   width: 100%;
-  height: 100%;
 }
 
 #monitorstand2 {
 
-  background: black;
-opacity: 0.5;
-  width: 50px;
+  background: var(--black10);
+opacity: 0.7;
+  width: 40px;
   height: 50px;
-  /* Center horizontally*/
+   Center horizontally
   margin: 0 auto;
 
   }
   #monitorstand3 {
-  background: black;
-opacity: 0.3;
+  background: var(--black10);
+opacity: 0.5;
   width: 100px;
   height: 10px;
-  /* Center horizontally*/
   margin: 0 auto;
   margin-bottom: 100px;
 
   }
-
+*/
   #lastP2 {
     background: linear-gradient(
       to bottom,
@@ -680,7 +662,7 @@ margin-top: -1.89em;
 
 
 footer {
-  border-top: 3px solid black;
+  border-top: 3px solid var(--teal);
   border-top-style: dotted;
 
 }
@@ -833,7 +815,6 @@ footer {
       padding-right: 40px;
     }
     #title2 {
-      color: black;
       background: var(--transparenttxt);
       
         padding-left: 0px;
@@ -841,8 +822,7 @@ footer {
     }
 
     .title3 {
-      color: white;
-      background: black;
+
       margin-left: 90px;
       padding-left: 3px;
       padding-right: 3px;
@@ -1043,6 +1023,7 @@ footer {
   @media (min-width: 1024px) {
 
 
+
     #h1 {
       margin-bottom: 30px;
       padding-left: 0;
@@ -1062,16 +1043,14 @@ footer {
       padding-right: 40px;
     }
     #title2 {
-      color: black;
-      background: var(--transparenttxt);
-      
+      color: var(--white);
+      background: var(--Tteal);
         padding-left: 0px;
       
     }
 
     .title3 {
-      color: white;
-      background: black;
+      color: var(--white);
       margin-left: 90px;
       padding-left: 3px;
       padding-right: 3px;
@@ -1108,7 +1087,6 @@ footer {
       .bgimage {
         background-image: url("./dragonhunter.jpeg");
         background-position: center; 
-        opacity: 0.43;
 
       }
       ul {
@@ -1130,12 +1108,11 @@ footer {
       padding-right: 40px;
     }
     #title2 {
-      color: black;
       background: var(--transparenttxt);
     }
     .title3 {
-      color: white;
-      background: black;
+      color: var(--white);
+      background: var(--Tteal);
       margin-left: 90px;
       padding-left: 8px;
       padding-right: 8px;
@@ -1180,6 +1157,7 @@ width: 100%;
 
 
 
+
   
       
     }
@@ -1194,6 +1172,7 @@ width: 100%;
         margin-right: 1.5em;
         padding-left: 0.5px;
       }
+
     }
 
 
@@ -1232,6 +1211,12 @@ width: 100%;
           scroll-margin-top: 1em;
       }
 
+      #videodiv {
+        margin: 8em auto;
+        width: 90%;
+        height: 100%;
+        }
+      
     }
 
 
@@ -1254,6 +1239,11 @@ width: 100%;
 
             scroll-margin-top: 1.5em;
         }
+        #videodiv {
+          margin: 8em auto;
+          width: 80%;
+          height: 100%;
+          }
 
     }
     @media (min-width: 641px) and (max-width: 1024px) {
@@ -1269,9 +1259,31 @@ width: 100%;
 
           scroll-margin-top: 5em;
       }
+
+      #videodiv {
+        margin: 8em auto;
+        width: 70%;
+        height: 100%;
+        }
+
     }
 
+    @media (min-width: 1024px) and (max-width: 1500px) {
 
+     #videodiv {
+        margin: 8em auto;
+        width: 50%;
+        height: 100%;
+        }
+      }
+      @media (min-width: 1500px) {
+
+        #videodiv {
+           margin: 8em auto;
+           width: 30%;
+           height: 100%;
+           }
+         }
 
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! new nav ! */
@@ -1281,12 +1293,12 @@ nav {
   justify-content: space-around;
   align-items: center;
 min-height: 10vh;
-font-family: 'Poppins', Helvetica, sans-serif;
-background: var(--grey)
+background: var(--white);
+border-bottom: 2px solid var(--teal);
 }
 
 .logo {
-  color: var(--bghover);
+  color: var(--teal);
   text-transform: uppercase;
   letter-spacing: 5px;
   font-size: 1.4em;
@@ -1314,18 +1326,19 @@ background: var(--grey)
 .burger div {
   width: 25px;
   height: 2.4px;
-  background-color: var(--bghover);
+  background-color: var(--teal);
   margin: 5px;
   transition: all 0.3s ease;
 }
 
 @media screen and (max-width: 641px) {
 
-  #colorswitch:hover {
 
-    color: var(--teal)
+  .navspan:hover {
+
+    color: black;
+    font-weight: bold;
   }
-
 
   #nav-bar {
     display: none;
@@ -1334,11 +1347,11 @@ background: var(--grey)
 
     .nav-links {
     position: absolute;
-    border-top: 1.6px solid var(--bghover2);
+    border-top: 1.6px solid var(--teal);
     right: 0px;
     height: 20em;
     top: 10vh;
-    background-color: grey;
+    background-color: var(--white);
     display: flex;
     flex-direction: row;
     align-items: flex-end;
@@ -1369,7 +1382,7 @@ background: var(--grey)
 }
 
 .nav-active a:hover {
-  background-color: var(--bghover);
+  background-color: var(--Tteal);
   opacity: 1;
 
  }
@@ -1427,7 +1440,7 @@ transform: translateX(0px);
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
-  background-color: var(--grey); /* Set a background color */
+  /* Set a background color */
   color: white; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 15px; /* Some padding */
@@ -1499,7 +1512,31 @@ transform: translateX(0px);
     }
 */    
 
-#colorswitch:hover {
-
-  color: var(--teal)
+.lr {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.watercDiv {
+  width: 100%;
+  background: linear-gradient(
+    to top,
+
+    var(--transparenttxt) 50%,
+    var(--transparenttxt) 100%
+    );
+    background-position: center; 
+    opacity: 0.9;
+    background-size: cover;
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    background-color:rgba(255, 255, 255, 1);
+
+}
+
+
+
+
