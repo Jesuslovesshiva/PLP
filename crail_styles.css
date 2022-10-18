@@ -182,7 +182,7 @@ li {
     opacity: 0.8;
     background-size: cover;
     background-size: 100vw;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-color:rgba(255, 255, 255, 1);
 
 }
@@ -802,7 +802,7 @@ footer {
       margin-bottom: 30px;
     }
     .bgimage {
-      background-repeat: no-repeat;
+      background-repeat: repeat;
   }
 
 
