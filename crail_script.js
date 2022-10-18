@@ -12,7 +12,7 @@ window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     mybutton.style.display = "block";
-    mybutton.style.backgroundColor = "grey";
+    mybutton.style.backgroundColor = "#C24b44";
   } else {
     mybutton.style.display = "none";
   }

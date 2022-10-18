@@ -2,9 +2,9 @@
   --bghover: rgb(202, 202, 202);
   --bghover2: rgb(178, 178, 178);
   --transparenttxt: rgba(255, 255, 255, 0.85); 
-  --teal: rgb(0, 110, 118); 
-  --Lteal: rgb(68, 187, 194); 
-  --Tteal: rgba(0, 110, 118, 0.5); 
+  --teal: rgb(118, 8, 0); 
+  --Lteal: #C24b44;
+  --Tteal: rgba(118, 8, 0, 0.5);  
   --black07: rgba(0, 0, 0, 0.7); 
   --black10: black;
   --grey: rgba(128, 128, 128, 1);
@@ -182,7 +182,7 @@ li {
     opacity: 0.8;
     background-size: cover;
     background-size: 100vw;
-    background-repeat: repeat;
+    background-repeat: no-repeat;
     background-color:rgba(255, 255, 255, 1);
 
 }
@@ -802,7 +802,7 @@ footer {
       margin-bottom: 30px;
     }
     .bgimage {
-      background-repeat: repeat;
+      background-repeat: no-repeat;
   }
 
 
@@ -1087,7 +1087,11 @@ footer {
     }
 
 
+      .bgimage {
+        background-image: url("./dragonhunter.jpeg");
+        background-position: center; 
 
+      }
       ul {
         margin-bottom: -30px;
       }
@@ -1538,3 +1542,6 @@ transform: translateX(0px);
 }
 
 
+.filter-teal {
+  filter: invert(17%) sepia(87%) saturate(3392%) hue-rotate(172deg) brightness(97%) contrast(101%);
+}
