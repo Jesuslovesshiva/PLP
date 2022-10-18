@@ -72,9 +72,10 @@ body {
 
 
 #header-img { 
-    border: var(--teal) 5px solid;
+    border: var(--Lteal) 5px solid;
     border-radius: 50%;
     margin-top: 30px;
+    opacity: 0.8;
     
 }
 
@@ -208,7 +209,7 @@ li {
   }
 
 
-  #title2 {
+  .title2 {
     display: flex;
    justify-content: center;
     color: var(--white);
@@ -276,6 +277,7 @@ overflow: hidden;
   }
 
   .quotetext {
+
     color: var(--black10);
     opacity: 1;
   }
@@ -371,7 +373,7 @@ font-size: 1em;
 
 
 
-  #title2 {
+  .title2 {
 padding-left: 65px;
   }
 
@@ -468,7 +470,7 @@ padding-left: 65px;
 
 #videodiv {
 margin: 5em;
-border: 2em var(--teal) groove;
+border: 0.5em var(--teal) outset;
 }
 
 /*
@@ -814,7 +816,7 @@ footer {
     #title {
       padding-right: 40px;
     }
-    #title2 {
+    .title2 {
       background: var(--transparenttxt);
       
         padding-left: 0px;
@@ -1042,7 +1044,7 @@ footer {
     #title {
       padding-right: 40px;
     }
-    #title2 {
+    .title2 {
       color: var(--white);
       background: var(--Tteal);
         padding-left: 0px;
@@ -1051,6 +1053,7 @@ footer {
 
     .title3 {
       color: var(--white);
+      
       margin-left: 90px;
       padding-left: 3px;
       padding-right: 3px;
@@ -1107,7 +1110,7 @@ footer {
     #title {
       padding-right: 40px;
     }
-    #title2 {
+    .title2 {
       background: var(--transparenttxt);
     }
     .title3 {
@@ -1518,6 +1521,7 @@ transform: translateX(0px);
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 .watercDiv {
@@ -1534,9 +1538,7 @@ transform: translateX(0px);
     background-size: 100vw;
     background-repeat: no-repeat;
     background-color:rgba(255, 255, 255, 1);
-
+ 
 }
-
-
 
 
