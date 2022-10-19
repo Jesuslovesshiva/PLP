@@ -35,7 +35,6 @@ body {
 #nav-bar {
   background-color: var(--white);
   display: flex;
-  justify-content: flex;
   align-items: center;
   overflow: hidden;
   position: fixed;
@@ -585,7 +584,7 @@ opacity: 0.5;
   */
 
 
-  @media  only screen and (min-device-width: 480px) {
+  @media  only screen and (min-width: 480px) {
  
     .bgimage {
       background-repeat: repeat;
