@@ -176,7 +176,7 @@ li {
   }
 
   .bgimage {
-    background-image: url("./dragonhunter.jpeg");
+    background-image: url("../assets/img/dragonhunter.jpeg");
     background-position: center; 
     opacity: 0.8;
     background-size: cover;
